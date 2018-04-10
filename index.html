@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>drag</title>
+	<style>
+	*{   
+    -webkit-touch-callout:none;  /*系统默认菜单被禁用*/   
+    -webkit-user-select:none; /*webkit浏览器*/   
+    -khtml-user-select:none; /*早期浏览器*/   
+    -moz-user-select:none;/*火狐*/   
+    -ms-user-select:none; /*IE10*/   
+    user-select:none;   
+}  
+	.item-group{
+		width: 200px;
+		list-style: none;
+	}
+	.item{
+		height: 50px;
+		width:200px;
+		line-height: 50px;
+		border:1px solid #ddd;
+		text-align: center;
+	}
+	</style>
+</head>
+<body>
+	<ul class="item-group">
+		<li class="item">item1</li>
+		<li class="item">item2</li>
+		<li class="item">item3</li>
+		<li class="item">item4</li>
+		<li class="item">item5</li>
+	</ul>
+	<script src='drag.js'></script>
+	<script>
+	var drag = new Drag('.item-group', {
+		supernatant: {
+			boxShadow : "0 4px 10px #DEDADA",
+			background : '#fff',
+			opacity: '0.8'
+		},
+		select: {
+			background: '#efefef'
+		}
+	})
+	</script>
+</body>
+</html>

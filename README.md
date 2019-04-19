@@ -1,6 +1,6 @@
 # drag.js  
 drag.js是一款拖动排序插件，适配pc端和手机端。  
-demo地址 --https://htmlpreview.github.io/?https://github.com/tls1234/drag/blob/master/index.html  
+demo地址 --https://tls1234.github.io/drag     
 # html 结构
 ```js
 <ul class="item-group">
